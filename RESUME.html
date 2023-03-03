@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        RESUME
+    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/3960f44712.js" crossorigin="anonymous"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Felix Titling;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+position::relative
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("bd2.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(6px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(41, 38, 38, 0.4); /* Black w/opacity/see-through */
+  color: rgb(224, 218, 218);
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+a:link, a:visited {
+  background-color: #1c1c1d;
+  color: rgb(245, 235, 235);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(122, 114, 130);
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color:#ababab;
+   display:inline-block;
+   transition: 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform:translateY(-5px);
+}
+
+.line-1{
+    position: relative;
+    top: 10%;  
+    width: 28em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 190%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    font-family: Felix Titling;
+   
+       
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.contact-left{
+    flex-basis: 35%;
+
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .contact-left p{
+    margin-top: 30px ;
+  }
+.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color:#ababab;
+   display:inline-block;
+   transition: 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform:translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+}
+.contact-right form{
+    width: 100%;
+}
+
+</style>
+</head>
+
+
+<body>  
+<div class="bg-image"></div>
+<div class="bg-text">
+  <h2 style="color:aqua">PORTFOLIO</h2><br>
+  <div><p class="line-1 anim-typewriter"><b>DEEPIKA M R</div>
+  <p style="font-family:Metropolis">INFORMATION TECHNOLOGY</p>
+  <!-- <a href="C:/Users/saira/OneDrive/Documents/javascript/contact.html">Contact</a> -->
+  <a href="C:/Users/saira/Desktop/portfolioWeb/samples.html" target="_blank">About me</a>
+   <a href="C:/Users/saira/OneDrive/Documents/javascript/RESUMEPDF.html">Resume</a>
+   <!-- <a href="#resume">Career</a> -->
+   <div id="contact">
+   <div class="container">
+  <div class="row">
+  <div class="contact-left"> 
+  <h1 class="sub-title">Contact Me</h1>
+  <p> <i class="fa-solid fa-paper-plane-top"></i>deepikarangasamy18@gmail.com</p>
+  <p> <i class="fa-solid fa-phone"></i>6369507941</p>
+ <div class="social-icons">
+
+   <a href=" https://www.linkedin.com/in/deepika-m-r-209a61216/"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="https://github.com/DEEPIKA-M-R"><i class="fa-brands fa-github"></i></a>
+   <a href=""><i class="fa-brands fa-instagram"></i></a>
+ </div>
+<!-- <a href=C:\Users\user\Desktop\PERSON\202IT138 HARI IMAGE.JPG download  class="btn"> Resume</a> -->
+  </div>
+  </div>
+  
+</body>
+</html>

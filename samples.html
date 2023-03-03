@@ -1,0 +1,148 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="samples.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+
+<center><h1 style="font-size:50px;font-family: Felix Titling;color:aqua">ABOUT ME</h1> </center><br><br>
+<div><p class="line-1 anim-typewriter";style=" font-family: Felix Titling;"><b>Hi....I'm DEEPIKA pursuing my bachelor's degree in <br>INFORMATION TECHNOLOGY </b></p><br><br></div>
+<center>
+  
+  <body>
+    <div>
+    <br>
+  <br>
+<div class="bg-text">
+   <p style="color:aqua">Career Objective<br></p>
+  <p style="font-size:20px;font-family:Footlight MT Light; ">Looking for a challenging role in a dynamic stable organisation<br> to utilize
+    my technical and analytical skills for<br> the growth of the organisation</p><hr>
+    <!------------------------inside box----------------------->
+      <div class="tab-titles">
+        <p class="links active-link" onclick="opentab('Personal details')">Personal details</p>
+        <p class="links" onclick="opentab('Educational Details')">Educational Details</p>
+        <p class="links" onclick="opentab('Technical Skills')">Technical Skills</p>
+        <p class="links" onclick="opentab('Areas of Interest')">Areas of Interest</p>
+        
+    </div>
+    
+  
+    <div class="tab-contents active-tab" id="Personal details">
+        <ul>
+            <li> <span>Mobile:</span><br>6369507941</li>
+            <li> <span>Email:</span><br>deepikarangasamy18@gmail.com<li>deepika.it20@bitsathy.ac.in</li></li>
+            <li> <span>Address:</span><br>5/11 TVK Nagar,Velliangadu,Tiruppur</span><br></li>
+
+        </ul>
+    </div>
+    <div class="tab-contents active-tab" id="Educational Details">
+      <ul>
+          <li> <span>UG degree</span><br>Bannari Amman Institute Of Technology(2020-2024)<br>-CGPA:8.73(current 6th sem)</li>
+          <li> <span>SSLC,HSLC</span><br>Vivekananda Vidhyalaya Matriculation Higher Secondary School</li>
+          <li>-SSLC:92%</li>
+          <li>-HSLC:86%</li>
+
+      </ul>
+  </div>
+  <div class="tab-contents active-tab" id="Technical Skills">
+    <ul>
+        <li>C,C++(intermediate)</li>
+        <li> Python,Java(basics)</li>
+        <li>html,css </li>
+        <li>js,react js</li>
+
+    </ul>
+</div>
+<div class="tab-contents active-tab" id="Areas of Interest">
+  <ul>
+      <li>Web application development</li>
+      <li> Full stack development</li>
+      <li>UI/UX designing</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+  var links=document.getElementsByClassName("links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+   
+  function opentab(tabname){
+     for(link of links){
+         link.classList.remove("active-link");
+     }
+
+     for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+   }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+ }
+</script>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Paper presentation')">Paper presentation</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Technical competition')">Technical competition</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Patent')">Patent</button>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <h3>Brain tumor detection(JAN 2022 - MAR 2022)</h3>
+  <p>Finding the brain tumor using Feed Forward Network(FNN)
+    and Radial Basis Function(RBF)-January 2022 (Team)</p>
+    <h3>Expense Tracker(Jan2023-feb2023)</h3>
+    <p>Web application development using
+    mern stack development-february 2023 (individual)</p>
+  
+</div>
+
+<div id="Paper presentation" class="tabcontent">
+    <h3>Implementation of Blockchain in healthcare</h3>
+  <p>-Proof of stack and proof of work(team)</p>
+  <p>-Jeppiaar college of engineering(Jul 2021)</p> 
+  <h3>Smart city using IOT</h3>
+  <p>-how IOT devices interact with smart vehicle and it works(team)</p>
+  <p>-Dr N.G.P institute of technology</p>
+</div>
+
+<div id="Technical competition" class="tabcontent">
+  <h3>Ideathon</h3>
+  <p>-submitted usecase on "cloud and edge computing"</p>
+  <p>-Sri Ram Engineering college January 2021 (Individual)</p> 
+  <h3>Code run</h3>
+  <p>-Participated in coding competiton and submitted the solution</p>
+  <p>-Computer Society of MIT, Anna University,
+    Chennai jun2022(individual)</p> 
+  <h3>Coding challenge</h3>
+  <p>-Participated and completed the daily coding challenge</p>
+  <p>-conducted by-Edyst,july 2022(individual)</p> 
+</div>
+
+<div id="Patent" class="tabcontent">
+  <h3>Laser Ignition Technology</h3>
+  <p>Filed a patent entitled "Laser Ignition Technology -Dec 2022</p>
+  <p>Laser ignition - Spark plug development and
+    application in reciprocating engines</p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
